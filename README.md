@@ -11,4 +11,4 @@ GitHub
 -Login\
 -Freunde adden/entfernen\
 -Bilder verschicken/empfangen\
--Standort der Freunde\
+-Standort der Freunde
