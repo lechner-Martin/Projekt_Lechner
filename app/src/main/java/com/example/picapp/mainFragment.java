@@ -1,5 +1,6 @@
 package com.example.picapp;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -17,16 +18,29 @@ import java.util.List;
 public class mainFragment extends Fragment {
 
     public ListView listView;
-    public List list = new ArrayList();
+    public List<String> status = new ArrayList();
+    public List<String> list = new ArrayList();
+    private OnSelectionChangedListener listener;
 
     public mainFragment() {
         // Required empty public constructor
     }
 
+    public void onAttach(Context context) {
+
+        super.onAttach(context);
+        if (context instanceof OnSelectionChangedListener) {
+            listener = (OnSelectionChangedListener) context;
+        } else {
+
+        }
+    }
+
     @Override
     public void onStart() {
         super. onStart() ;
-        final ArrayAdapter adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, list);
+
+        final AdapterMain adapter = new AdapterMain(getContext(), R.layout.main_names_layout, list, status);
         listView.setAdapter(adapter);
     }
 

@@ -15,7 +15,7 @@
         android:layout_marginTop="29dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="311dp"
-        android:text="Button"
+        android:text="Register"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import androidx.fragment.app.FragmentActivity;
+
 import java.util.List;
 
 public class AdapterMain extends BaseAdapter {
@@ -18,6 +20,7 @@ public class AdapterMain extends BaseAdapter {
     private LayoutInflater inflater;
 
     public AdapterMain(Context context, int layoutId, List<String> pics, List<String> status) {
+
         this.pics = pics;
         this.status = status;
         this.layoutId = layoutId;

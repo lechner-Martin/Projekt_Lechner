@@ -4,6 +4,7 @@
 
     <item
         android:id="@+id/friends_id"
+        android:icon="@drawable/friends_icon"
         android:title="Freunde"
         app:showAsAction="ifRoom" />
     <item
