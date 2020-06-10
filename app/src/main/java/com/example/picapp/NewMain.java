@@ -5,9 +5,13 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -60,17 +64,24 @@ public class NewMain extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... strings) {
-
+            BufferedReader reader;
             String username = strings[0];
             String sJson = "";
             try {
                 HttpURLConnection connection = (HttpURLConnection) new URL(URL + username + "/").openConnection();
                 connection.setRequestMethod("GET");
+                connection.setConnectTimeout(1000);
+                connection.setReadTimeout(1000);
                 connection.setRequestProperty("Content-Type", "application/json");
                 int responseCode = connection.getResponseCode();
                 if (responseCode == HttpURLConnection.HTTP_OK) {
-                    BufferedReader reader = new BufferedReader( new InputStreamReader(connection.getInputStream()));
+                    reader = new BufferedReader( new InputStreamReader(connection.getInputStream()));
                     sJson = readResponseStream(reader);
+
+                }else {
+                    reader = new BufferedReader( new InputStreamReader(connection.getErrorStream()));
+                    String error = readResponseStream(reader);
+                    Toast.makeText(NewMain.this, error, Toast.LENGTH_SHORT).show();
                 }
             } catch (IOException e) {
                 e.printStackTrace();

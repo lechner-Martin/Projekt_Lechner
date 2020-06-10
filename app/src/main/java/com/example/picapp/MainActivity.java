@@ -18,12 +18,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_login);
+        setContentView(R.layout.activity_main);
         Login_fragment login = new Login_fragment();
         FragmentManager fm = getSupportFragmentManager();
-        fm.beginTransaction().add(R.id.login, login).commit();
+        fm.beginTransaction().replace(R.id.fragment_container, login).commit();
         friends = new ArrayList();
-
     }
 
 

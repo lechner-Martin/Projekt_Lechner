@@ -766,6 +766,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id checkBox
 id checkbox
 id checked
 id chronometer
@@ -783,7 +784,6 @@ id dimensions
 id direct
 id disableHome
 id edit_query
-id email
 id end
 id end_padder
 id expand_activities_button
@@ -792,6 +792,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id forever
+id fragment_container
 id fragment_main
 id friendName
 id friends_id
@@ -816,6 +817,8 @@ id list_item
 id list_main
 id login
 id login_btn
+id login_email
+id login_password
 id mainLayout
 id media_actions
 id message
@@ -833,7 +836,6 @@ id on
 id packed
 id parent
 id parentPanel
-id password
 id percent
 id progress_circular
 id progress_horizontal
@@ -841,6 +843,8 @@ id radio
 id register
 id registerButton
 id register_btn
+id register_email
+id register_password
 id right
 id right_icon
 id right_side
@@ -897,6 +901,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id unchecked
