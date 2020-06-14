@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "17489178073",
+    "firebase_url": "https://picapp-f8f0d.firebaseio.com",
+    "project_id": "picapp-f8f0d",
+    "storage_bucket": "picapp-f8f0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17489178073:android:f30c697ab1ce59d5cf3dc8",
+        "android_client_info": {
+          "package_name": "com.example.picapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17489178073-ujl3ifjpja2j45as7el6ea5p1pr33b4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR7jPuWJ_N9u9O5dMDpKh1AEK5xbkpJGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17489178073-ujl3ifjpja2j45as7el6ea5p1pr33b4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

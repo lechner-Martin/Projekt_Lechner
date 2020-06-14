@@ -12,6 +12,10 @@
         "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_group_black_24dp.xml.flat",
+        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\drawable\\ic_group_black_24dp.xml"
+    },
+    {
         "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_friend_list_layout.xml.flat",
         "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\layout\\friend_list_layout.xml"
     },
@@ -32,20 +36,16 @@
         "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_picapp_logo.png.flat",
-        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\drawable\\picapp_logo.png"
-    },
-    {
         "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register.xml.flat",
         "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\layout\\fragment_register.xml"
     },
     {
-        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_friends.xml.flat",
-        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\layout\\fragment_friends.xml"
+        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_picapp_logo.png.flat",
+        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\drawable\\picapp_logo.png"
     },
     {
-        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_friends_icon.png.flat",
-        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\drawable\\friends_icon.png"
+        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_friends.xml.flat",
+        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\layout\\fragment_friends.xml"
     },
     {
         "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
@@ -60,12 +60,20 @@
         "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\menu\\action_bar.xml"
     },
     {
+        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
+    },
+    {
         "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_black_24dp.xml.flat",
+        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\drawable\\ic_settings_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_main.xml.flat",

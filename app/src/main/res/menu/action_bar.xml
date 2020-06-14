@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/home_id"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+    <item
         android:id="@+id/friends_id"
-        android:icon="@drawable/friends_icon"
-        android:title="Freunde"
-        app:showAsAction="ifRoom" />
+        android:icon="@drawable/ic_group_black_24dp"
+        android:title="Freunde" />
     <item
         android:id="@+id/settings"
-        android:icon="@android:drawable/ic_menu_manage"
-        android:title="Einstellungen"
-        app:showAsAction="ifRoom" />
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Einstellungen" />
 </menu>

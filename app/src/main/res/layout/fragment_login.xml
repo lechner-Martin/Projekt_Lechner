@@ -64,7 +64,7 @@
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
-        android:hint="E-mail"
+        android:hint="E-mail oder Username"
         android:inputType="textEmailAddress"
         android:padding="7dp"
         android:textColor="@android:color/black"

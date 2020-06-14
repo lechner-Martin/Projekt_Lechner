@@ -1,6 +1,7 @@
 package com.example.picapp;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,6 +53,8 @@ public class AdapterMain extends BaseAdapter {
         TextView statusTextView = listItem.findViewById(R.id.status);
         nameTextView.setText(name);
         statusTextView.setText(state);
+        if (state.equals("Neues Pic")) statusTextView.setTextColor(Color.GREEN);
+        if (state.equals("Geöffnet")) statusTextView.setTextColor(Color.BLACK);
         return listItem;
     }
 }

@@ -6,6 +6,14 @@
     android:orientation="vertical"
     tools:context=".Friends">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/picapp_logo2"
+        android:layout_marginBottom="15dp"
+        />
+
     <ListView
         android:id="@+id/friends_list"
         android:layout_width="match_parent"

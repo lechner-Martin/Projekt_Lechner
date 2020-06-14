@@ -31,11 +31,14 @@ public class Friends extends Fragment {
 
         View view = inflater.inflate (R.layout.fragment_friends , container , false );
         initializeViews (view);
+
         return view;
     }
     private void initializeViews (View view) {
 
         list = view.findViewById(R.id.friends_list);
+        friendsAdapter = new FriendsAdapter(getActivity(), R.layout.friend_list_layout, friends);
+        list.setAdapter(friendsAdapter);
     }
 
     public List<String> getFriends() {
@@ -44,8 +47,7 @@ public class Friends extends Fragment {
 
     @Override
     public void onStart() {
-        super. onStart() ;
-        friendsAdapter = new FriendsAdapter(getActivity(), R.layout.friend_list_layout, friends);
-        list.setAdapter(friendsAdapter);
+
+        super.onStart();
     }
 }
