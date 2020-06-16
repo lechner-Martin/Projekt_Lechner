@@ -1,5 +1,6 @@
 package com.example.picapp;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -35,10 +36,10 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class Login_fragment extends Fragment {
 
-    String email;
-    String password;
-    FirebaseDatabase myAppDatabase;
-    private static final Object URL = "https://picapp-f8f0d.firebaseio.com/users";
+    private String email;
+    public static String USERNAME;
+    private String password;
+    private FirebaseDatabase myAppDatabase;
 
     public Login_fragment() {
         // Required empty public constructor
@@ -61,7 +62,10 @@ public class Login_fragment extends Fragment {
             e.printStackTrace();
         }
         View v = inflater.inflate(R.layout.fragment_login, container, false);
-        ((MainActivity) getActivity()).findViewById(R.id.bottom_nav).setVisibility(View.GONE);
+        getActivity().findViewById(R.id.toolbar_main).setVisibility(View.GONE);
+        getActivity().findViewById(R.id.toolbar_main).setBackgroundResource(R.drawable.picapp_logo2);
+        getActivity().findViewById(R.id.bottom_nav).setVisibility(View.GONE);
+        getActivity().findViewById(R.id.bottom_nav).setBackgroundColor(R.attr.backgroundColor);
         final TextView emailV = v.findViewById(R.id.login_email);
         final TextView passwordV = v.findViewById(R.id.login_password);
         final CheckBox cb = v.findViewById(R.id.checkBox);
@@ -99,11 +103,14 @@ public class Login_fragment extends Fragment {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         for (DataSnapshot ds : dataSnapshot.getChildren()) {
-                            HashMap user = (HashMap) ds.child("user").getValue();
-                            System.out.println(user);
-                            login(user);
-                            return;
+                            HashMap user = (HashMap) ds.getValue();
+                            if (user.get("username").equals(email) || user.get("email").equals(email)) {
+                                System.out.println(user);
+                                login(user);
+                                return;
+                            }
                         }
+                        Toast.makeText(getActivity(), "Falscher Username/E-Mail", Toast.LENGTH_SHORT).show();
                     }
                     @Override
                     public void onCancelled(DatabaseError databaseError) {
@@ -114,15 +121,12 @@ public class Login_fragment extends Fragment {
 
             }
         });
-        goToRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        goToRegister.setOnClickListener(v1 -> {
 
-                Register_fragment reg = new Register_fragment();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragment_container, reg).addToBackStack(null);
-                transaction.commit();
-            }
+            Register_fragment reg = new Register_fragment();
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.fragment_container, reg).addToBackStack(null);
+            transaction.commit();
         });
         return v;
     }
@@ -130,15 +134,20 @@ public class Login_fragment extends Fragment {
     private void login(HashMap user) {
 
             assert user != null;
-            String userName = (String) user.get("userName");
+            String userName = (String) user.get("username");
             String emailU = (String) user.get("email");
             String passwordU = (String) user.get("password");
 
             if (email.equals(emailU) || email.equals(userName) && password.equals(passwordU)) {
+                USERNAME = userName;
                 MainFragment mFrag = new MainFragment();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, mFrag);
                 transaction.commit();
             }
+    }
+
+    public static String getUsername () {
+        return USERNAME;
     }
 }

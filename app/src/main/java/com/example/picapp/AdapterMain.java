@@ -53,8 +53,8 @@ public class AdapterMain extends BaseAdapter {
         TextView statusTextView = listItem.findViewById(R.id.status);
         nameTextView.setText(name);
         statusTextView.setText(state);
-        if (state.equals("Neues Pic")) statusTextView.setTextColor(Color.GREEN);
-        if (state.equals("Geöffnet")) statusTextView.setTextColor(Color.BLACK);
+        if (state.equals("Neues Pic")) statusTextView.setTextColor(Color.RED);
+        if (state.equals("Geöffnet")) statusTextView.setTextColor(R.attr.textColor);
         return listItem;
     }
 }

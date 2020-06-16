@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="?attr/backgroundColor"
     tools:context=".Friends">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@drawable/picapp_logo2"
-        android:layout_marginBottom="15dp"
-        />
+        android:background="?attr/backgroundIcon"
+        android:layout_marginBottom="15dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/friends_list"
+        android:layout_alignBottom="@+id/friends_list"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="?attr/backgroundtint"
+        android:clickable="true"
+        android:onClick="checkAndAdd"
+        android:src="@drawable/ic_add_black_24dp"
+        app:fabCustomSize="60dp" />
 
     <ListView
         android:id="@+id/friends_list"
+        android:background="?attr/backgroundColor"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:clickable="true"
         android:dividerHeight="10dp" />
-</LinearLayout>
+
+
+
+</RelativeLayout>

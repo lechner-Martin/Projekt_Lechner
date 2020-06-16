@@ -8,12 +8,16 @@
         "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_group_black_24dp.xml.flat",
+        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\drawable\\ic_group_black_24dp.xml"
+    },
+    {
         "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_group_black_24dp.xml.flat",
-        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\drawable\\ic_group_black_24dp.xml"
+        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\xml_preferences.xml.flat",
+        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\xml\\preferences.xml"
     },
     {
         "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_friend_list_layout.xml.flat",
@@ -48,6 +52,14 @@
         "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\layout\\fragment_friends.xml"
     },
     {
+        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_picapp_logo_dark.PNG.flat",
+        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\drawable\\picapp_logo_dark.PNG"
+    },
+    {
+        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_add_friend_dialog.xml.flat",
+        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\layout\\add_friend_dialog.xml"
+    },
+    {
         "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
@@ -70,6 +82,10 @@
     {
         "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_black_24dp.xml.flat",
+        "source": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\src\\main\\res\\drawable\\ic_add_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\marti\\AndroidStudioProjects\\PicApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_black_24dp.xml.flat",

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1">
+
+    <PreferenceCategory
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:title="Aussehen">
+        <SwitchPreference
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:defaultValue="true"
+            android:key="dark_mode_switch"
+            android:summary="Aktiviert den Dark Mode"
+            android:title="Dark Mode"
+            app:enabled="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -17,6 +17,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -28,7 +30,6 @@ public class MainFragment extends Fragment {
     public ListView listView;
     public List<String> status;
     public List<String> list;
-    private OnSelectionChangedListener listener;
 
     public MainFragment() {
         // Required empty public constructor
@@ -44,14 +45,16 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_main, container, false);
-        ((MainActivity) getActivity()).findViewById(R.id.bottom_nav).setVisibility(View.VISIBLE);
+        BottomNavigationView bottomNav = getActivity().findViewById(R.id.bottom_nav);
+        bottomNav.setVisibility(View.VISIBLE);
+        bottomNav.setBackgroundColor(R.attr.backgroundColor);
         listView = view.findViewById(R.id.list_main);
         status = new ArrayList<>();
         list = new ArrayList<>();
-        adapter = new AdapterMain(getActivity(), R.layout.main_names_layout, list, status);
-        listView.setAdapter(adapter);
         list.add("adasd");
         status.add("Neues Pic");
+        adapter = new AdapterMain(getActivity(), R.layout.main_names_layout, list, status);
+        listView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
         return view;
     }

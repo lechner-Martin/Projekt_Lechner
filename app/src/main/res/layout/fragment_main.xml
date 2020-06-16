@@ -5,18 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="?attr/backgroundColor"
     tools:context=".MainFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@drawable/picapp_logo2"
+        android:background="?attr/backgroundIcon"
         android:layout_marginBottom="15dp"
         />
 
     <ListView
         android:id="@+id/list_main"
+        android:background="?attr/backgroundColor"
+        android:backgroundTint="?attr/backgroundColor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:dividerHeight="10dp" />
