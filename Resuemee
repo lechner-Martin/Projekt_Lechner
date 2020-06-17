@@ -1,21 +1,21 @@
-## 10.06.2020
+## 17.06.2020
 
 Gut gelaufen ist:
-+ Fragment Container
++ Settings Fragment
  
 Fertiggestellte Tasks:
-+ Firebase lernen und konfigurieren
-+ Login
-+ Main Page fertigstellen
++ Preferences
++ Freunde adden
++ Fotos versenden (nocht nicht Empfangen)
 
 Probleme:
-- Datenbank
-- Kleines Problem auf der Main Page
+- Listen gehen nicht
+- Unübersichtlich
 
 Wie liege ich im Zeitplan:
-Etwas hinten (Freunde müssen noch in die Datenbank hinzugefügt werden, Fotos versenden)
+Fast im Zeitplan (Fotos empfangen)
 
 Was wird nächste Woche umgesetzt
-- Freunde hinzufügen
-- Fotos versenden und empfangen
-- Preferences
+- Standort
+- Fotos empfangen
+- Kleine Nachbesserungen bzw. Layout verbessern
